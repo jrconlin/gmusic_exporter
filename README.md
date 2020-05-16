@@ -1,6 +1,6 @@
 # Export Google Playlists
 
-Google Music is awesome, and so google is going to kill it off. 
+Google Music is awesome, and so [google is going to kill it off](https://www.androidpolice.com/2020/05/12/google-will-kill-play-music-this-year-announces-youtube-music-migration-tool/). 
 
 So, if you're like me and have lots of carefully curated playlists generated over the years, this is not happy news. Yes, in theory, these will be moved over to Youtube Music, but let's be honest, you're here. If this wasn't a sore point, you wouldn't be.
 
@@ -23,7 +23,7 @@ These are python scripts, so yeah, you want to probably run in a virtualenv and 
 
 ### Dumping to a CSV
 
-to_csv.py just reads the .json file you give it and creates a simple CSV containing the artist, title, album and a link to the cover art if it's there. Feel free to go nuts and add OPML or whatever support. I don't need it, but this was more a proof of concept.
+`to_csv.py` just reads the .json file you give it and creates a simple CSV containing the artist, title, album and a link to the cover art if it's there. Feel free to go nuts and add OPML or whatever support. I don't need it, but this was more a proof of concept.
 
 ### Dumping to Spotify
 
@@ -46,7 +46,7 @@ You can even be super clever and create a `run.sh` script that sets those vars f
 SPOTIPY_CLIENT_ID=abc123 \
 SPOTIPY_CLIENT_SECRET=fake456 \
 SPOTIPY_USER=joerandom \
-venv/bin/python to_spotipy.py $*
+venv/bin/python to_spotify.py $*
 ```
 
 But, I'm not your Dad.
